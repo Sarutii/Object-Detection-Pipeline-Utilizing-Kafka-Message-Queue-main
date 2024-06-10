@@ -1,0 +1,8 @@
+Flask
+flask-socketio
+confluent-kafka
+requests
+Pillow
+matplotlib
+numpy
+opencv-python-headless
