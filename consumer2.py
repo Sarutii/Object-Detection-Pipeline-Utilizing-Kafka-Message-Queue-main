@@ -61,13 +61,13 @@ def shutdown():
     running = False
 
 
-me = "mohamed-elawadi-1"
-# kafka_broker = '34.68.55.43:9094,34.136.142.41:9094,34.170.19.136:9094'
-kafka_broker = "127.0.0.1:29092"
+me = "AhmedYehia"
+kafka_broker = '34.68.55.43:9094,34.136.142.41:9094,34.170.19.136:9094'
+# kafka_broker = "127.0.0.1:29092"
 
-conf = {'bootstrap.servers':kafka_broker, 'group.id': 'foo2', 'enable.auto.commit': 'True', 'auto.offset.reset': 'earliest'}
+conf = {'bootstrap.servers':kafka_broker, 'group.id': 'foo', 'enable.auto.commit': 'True', 'auto.offset.reset': 'earliest'}
 
 consumer = Consumer(conf)
 
-basic_consume_loop(consumer, ['MohamedAdlyServer5'])
+basic_consume_loop(consumer, ['Topic2'])
 

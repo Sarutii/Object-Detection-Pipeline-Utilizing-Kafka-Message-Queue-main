@@ -11,16 +11,16 @@ from flask import (Flask, redirect, render_template_string, request,
 
 from confluent_kafka import Producer
 
-me = "mohamed-elawadi-1"
+me = "AhmedYehia"
 
-# kafka_broker = '34.68.55.43:9094,34.136.142.41:9094,34.170.19.136:9094'
-kafka_broker = "127.0.0.1:29092"
+kafka_broker = '34.68.55.43:9094,34.136.142.41:9094,34.170.19.136:9094'
+# kafka_broker = "127.0.0.1:29092"
 
 conf = { 'bootstrap.servers':kafka_broker , 'client.id': me}
 
 producer = Producer (conf)
 
-topic = "MohamedAdlyServer4"
+topic = "Topic1"
 
 
 def produce_msg(id, filepath):
